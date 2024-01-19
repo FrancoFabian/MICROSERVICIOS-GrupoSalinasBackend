@@ -13,3 +13,16 @@ VALUES ('Felipe Franco', 'francoslide@gmail.com', '9512560018', 'FAMF990421HOCBN
 SELECT current_database();
 SELECT * FROM Usuarioorq;
 ```
+### Ocupe Spring Reactive Web version de Java 17
+####
+### Endpoints de interes con el Orquestador
+##URL:http://localhost:8016/api/Orquestador/crearUsuario
+```json
+{
+    "nombre": "Melee Santiago",
+    "email": "francoslide4849@gmail.com",
+    "telefono": "9512560018",
+    "curp": "FAMF990421HOCBNL08",
+    "codigoPostal": "71506"
+}
+```
