@@ -1,4 +1,6 @@
-```sqlCREATE TABLE Usuarioorq (
+### Base de Datos PostgreSQL[pgAdmin 4]
+```sql
+CREATE TABLE Usuarioorq (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
