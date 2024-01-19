@@ -26,7 +26,7 @@ SELECT * FROM Usuarioorq;
     "codigoPostal": "71506"
 }
 ```
-###[UPDATE]
+###[UPDATE] De tipo Post
 ##URL:http://localhost:8016/api/Orquestador/actualizarUsuario
 ##body
 ```json
@@ -38,4 +38,35 @@ SELECT * FROM Usuarioorq;
     "curp": "FAMF990421HOCBNL04",
     "codigoPostal": "71506"
 }
+```
+###APIGATEWAY port:8016
+```yml
+server:
+  port: 8016
+
+spring:
+  application:
+    name: msvc-gateway
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: msOrquest
+            uri: http://localhost:8080
+            predicates:
+              - Path=/api/Orquestador/**
+          - id: msDominio
+            uri: http://localhost:8032
+            predicates:
+              - Path=/api/Usuarios/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka/
+
+
 ```
