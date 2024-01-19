@@ -26,3 +26,16 @@ SELECT * FROM Usuarioorq;
     "codigoPostal": "71506"
 }
 ```
+###[UPDATE]
+##URL:http://localhost:8016/api/Orquestador/actualizarUsuario
+##body
+```json
+{
+    "id": 1,
+    "nombre": "Franco Fabian Mendoza",
+    "email": "francosliW90@gmail.com",
+    "telefono": "9512560018",
+    "curp": "FAMF990421HOCBNL04",
+    "codigoPostal": "71506"
+}
+```
