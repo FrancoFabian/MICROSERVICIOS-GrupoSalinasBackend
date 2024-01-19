@@ -1,0 +1,22 @@
+# Configuraci?n del servidor Eureka
+server:
+  port: 8010
+
+
+spring:
+  application:
+    name: msvc-eureka
+  config:
+    import: optional:configserver:http://localhost:8090
+  output:
+    ansi:
+      enabled: ALWAYS
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/

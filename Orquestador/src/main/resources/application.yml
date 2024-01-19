@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: msvc-orquestador
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka
