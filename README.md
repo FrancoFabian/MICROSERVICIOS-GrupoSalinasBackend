@@ -16,7 +16,7 @@ SELECT * FROM Usuarioorq;
 ### Ocupe Spring Reactive Web version de Java 17
 ####
 ### Endpoints de interes con el Orquestador
-##URL:http://localhost:8016/api/Orquestador/crearUsuario
+## URL:http://localhost:8016/api/Orquestador/crearUsuario
 ```json
 {
     "nombre": "Melee Santiago",
@@ -26,9 +26,9 @@ SELECT * FROM Usuarioorq;
     "codigoPostal": "71506"
 }
 ```
-###[UPDATE] De tipo Post
-##URL:http://localhost:8016/api/Orquestador/actualizarUsuario
-##body
+### [UPDATE] De tipo Post
+## URL:http://localhost:8016/api/Orquestador/actualizarUsuario
+## body
 ```json
 {
     "id": 1,
