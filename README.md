@@ -40,7 +40,7 @@ SELECT * FROM Usuarioorq;
     "codigoPostal": "71506"
 }
 ```
-###APIGATEWAY port:8016
+### APIGATEWAY Configuracion
 ```yml
 server:
   port: 8016
