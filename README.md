@@ -16,6 +16,7 @@ SELECT * FROM Usuarioorq;
 ### Ocupe Spring Reactive Web version de Java 17
 ####
 ### Endpoints de interes con el Orquestador
+### [CREATE] De tipo Post
 ## URL:http://localhost:8016/api/Orquestador/crearUsuario
 ```json
 {
